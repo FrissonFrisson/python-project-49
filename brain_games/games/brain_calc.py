@@ -14,7 +14,7 @@ def main():
         value = eval(expression)
         questions.append(str(expression)), correct_answers.append(str(value))
     name = game_tools.greetings()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
     if game_tools.check_answer(correct_answers, questions):
         print(f'Congratulations, {name}!')
         return

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..scripts import game_tools
+from . import game_tools
 from random import random, choice
 
 

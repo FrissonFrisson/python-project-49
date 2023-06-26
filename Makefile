@@ -11,11 +11,16 @@ brain-even:
 
 brain-calc:
 	poetry run brain-calc
+
 brain-gcd:
-	poetry run brain-gcd		
+	poetry run brain-gcd	
+
 build:
 	poetry build
 
+brain_progression: 
+	poetry run brain_progression
+	
 publish:
 	poetry publish --dry-run
 

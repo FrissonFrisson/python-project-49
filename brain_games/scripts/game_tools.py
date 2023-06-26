@@ -10,7 +10,7 @@ def greetings():
 
 def check_answer(correct_answer, questions):
     for question, answer in zip(questions, correct_answer):
-        print(f"Question:{question}")
+        print(f"Question: {question}")
         user_answer = prompt.string('Your answer:')
         if user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")

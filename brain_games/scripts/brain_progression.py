@@ -4,8 +4,8 @@ from random import random, randrange
 
 
 def progression():
-    random_lenght = round(random()*10)
-    a = round(random()*10)
+    random_lenght = round(random() * 10)
+    a = round(random() * 10)
     d = randrange(1, 10)
     progression = []
     lenght = random_lenght if random_lenght >= 5 else 5

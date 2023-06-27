@@ -7,8 +7,8 @@ def main():
     correct_answers = []
     questions = []
     for i in range(0, 3):
-        num_1 = int(random()*10)
-        num_2 = int(random()*10)
+        num_1 = int(random() * 10)
+        num_2 = int(random() * 10)
         operator = choice(['*', '+', '-'])
         expression = f"{num_1} {operator} {num_2}"
         value = eval(expression)

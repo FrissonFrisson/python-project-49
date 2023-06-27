@@ -2,6 +2,7 @@
 from . import game_tools
 from random import random
 
+
 def is_prime(num):
     if num <= 1:
         return False
@@ -10,8 +11,9 @@ def is_prime(num):
             return False
     return True
 
+
 def main():
-    questions = list([round(random()*100) for i in range(0, 3)])
+    questions = list([round(random() * 100) for i in range(0, 3)])
     correct_answer = list(['yes'if is_prime(i) else 'no' for i in questions])
     name = game_tools.greetings()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')

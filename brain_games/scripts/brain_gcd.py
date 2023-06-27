@@ -20,12 +20,12 @@ def NOD(num_1, num_2):
 
 
 def main():
-    questions = [[int(random()*100), int(random()*100)] for i in range(0, 3)]
-    correct_answer = list([str(NOD(x, y)) for x, y in questions])
-    questions = [f'{x} {y}' for x, y in questions]
+    question = [[int(random() * 100), int(random() * 100)] for i in range(0, 3)]
+    correct_answer = list([str(NOD(x, y)) for x, y in question])
+    question = [f'{x} {y}' for x, y in question]
     name = game_tools.greetings()
     print('Find the greatest common divisor of given numbers.')
-    if game_tools.check_answer(correct_answer, questions):
+    if game_tools.check_answer(correct_answer, question):
         print(f'Congratulations, {name}!')
         return
     print(f"Let's try again, {name}!")

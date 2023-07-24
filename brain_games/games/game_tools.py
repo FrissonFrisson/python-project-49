@@ -16,7 +16,7 @@ def check_answer(correct_answer, questions, name):
             print(
                 f'\'{user_ans}\' is wrong answer ;(.',
                 ' Correct answer was \'{ans}\'.'
-                )
+            )
             print(f'Let\'s try again, {name}!')
             return
         print('Correct!')

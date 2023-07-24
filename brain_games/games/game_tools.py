@@ -13,9 +13,9 @@ def check_answer(correct_answer, questions, name):
         print(f'Question: {question}')
         user_ans = prompt.string('Your answer:')
         if user_ans != ans:
-            print(f''{user_ans}' is wrong answer ;(. Correct answer was '{ans}'.')
-            print(f'Let's try again, {name}!')
+            print(f'"{user_ans}" is wrong answer ;(. Correct answer was "{ans}".')
+            print(f'Let\'s try again, {name}!')
             return
         print('Correct!')
-    print(f'Congratulations, {name}!')    
+    print(f'Congratulations, {name}!')
     return

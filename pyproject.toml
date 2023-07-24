@@ -1,15 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = 
-"
-A project created as part of the Hexlet course. 
-Three games with a mathematical focus were created here. 
-To pass one of the games you need to correctly answer 3 questions.
-"
+description = "A project created as part of the Hexlet course. Three games with a mathematical focus were created here. To pass one of the games you need to correctly answer 3 questions."
 repository = "https://github.com/FrissonFrisson/python-project-49.git"
-classifiers = 
-[
+classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Unlicense",

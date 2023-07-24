@@ -24,4 +24,3 @@ def question_answer():
         questions.append(progr)
     questions = [' '.join([str(y) for y in i]) for i in questions]
     return correct_answer, questions
- 

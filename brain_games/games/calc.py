@@ -12,7 +12,3 @@ def question_answer():
         value = eval(expression)
         questions.append(str(expression)), correct_answers.append(str(value))
     return correct_answers, questions
-
-
-if __name__ == '__main__':
-    main()

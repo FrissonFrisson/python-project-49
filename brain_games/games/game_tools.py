@@ -19,7 +19,3 @@ def check_answer(correct_answer, questions, name):
         print('Correct!')
     print(f'Congratulations, {name}!')
     return
-
-
-if __name__ == '__main__':
-    main()

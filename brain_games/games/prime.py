@@ -14,7 +14,3 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-
-    
-if __name__ == '__main__':
-    main()

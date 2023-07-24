@@ -7,6 +7,7 @@ def main():
     name = game_tools.greetings()
     print('What is the result of the expression?')
     game_tools.check_answer(correct_ans, question, name)
+    return
 
 
 if __name__ == '__main__':

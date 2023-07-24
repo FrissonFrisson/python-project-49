@@ -7,3 +7,7 @@ def question_answer():
     correct_answer = [str(gcd(x, y)) for x, y in questions]
     questions = [f'{x} {y}' for x, y in questions]
     return correct_answer, questions
+
+
+if __name__ == '__main__':
+    main()

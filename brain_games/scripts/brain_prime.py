@@ -7,6 +7,7 @@ def main():
     name = game_tools.greetings()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     game_tools.check_answer(correct_ans, question, name)
+    return
 
 
 if __name__ == '__main__':

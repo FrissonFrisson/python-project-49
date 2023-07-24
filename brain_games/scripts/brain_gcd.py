@@ -7,6 +7,7 @@ def main():
     name = game_tools.greetings()
     print('Find the greatest common divisor of given numbers.')
     game_tools.check_answer(correct_ans, question, name)
+    return
 
 
 if __name__ == '__main__':

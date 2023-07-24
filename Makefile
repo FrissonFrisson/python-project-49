@@ -22,8 +22,8 @@ brain-prime:
 build:
 	poetry build
 
-brain_progression: 
-	poetry run brain_progression
+brain-progression: 
+	poetry run brain-progression
 	
 publish:
 	poetry publish --dry-run

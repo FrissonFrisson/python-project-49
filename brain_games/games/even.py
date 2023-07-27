@@ -1,7 +1,9 @@
 from random import randrange
 
+WHY = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def question_answer():
-    questions = [randrange(1, 100) for i in range(0, 3)]
-    correct_answer = ['yes' if i % 2 == 0 else 'no' for i in questions]
+
+def question_answer(difficulty_settings):
+    questions = difficulty_settings()
+    correct_answer = 'yes' if questions % 2 == 0 else 'no'
     return correct_answer, questions

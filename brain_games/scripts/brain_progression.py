@@ -3,10 +3,7 @@ from ..games import progressions, game_tools
 
 
 def main():
-    correct_ans, question = progressions.question_answer()
-    name = game_tools.greetings()
-    print('What number is missing in the progression?')
-    game_tools.check_answer(correct_ans, question, name)
+    game_tools.check_answer(progressions.question_answer, progressions.WHY)
     return
 
 

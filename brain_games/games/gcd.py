@@ -2,8 +2,13 @@ from random import randrange
 from math import gcd
 
 
-def question_answer():
-    questions = [[randrange(1, 100), randrange(1, 100)] for i in range(0, 3)]
-    correct_answer = [str(gcd(x, y)) for x, y in questions]
-    questions = [f'{x} {y}' for x, y in questions]
+WHY = 'Find the greatest common divisor of given numbers.'
+
+
+def question_answer(difficulty_settings):
+    num_1 = difficulty_settings()
+    num_2 = difficulty_settings()
+    correct_answer = str(gcd(num_1, num_2))
+    questions = f'{num_1} {num_2}'
     return correct_answer, questions
+

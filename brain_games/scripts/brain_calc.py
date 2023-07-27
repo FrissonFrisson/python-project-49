@@ -3,10 +3,7 @@ from ..games import calc, game_tools
 
 
 def main():
-    correct_ans, question = calc.question_answer()
-    name = game_tools.greetings()
-    print('What is the result of the expression?')
-    game_tools.check_answer(correct_ans, question, name)
+    game_tools.check_answer(calc.question_answer, calc.WHY)
     return
 
 

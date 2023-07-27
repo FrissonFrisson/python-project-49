@@ -1,21 +1,40 @@
 import prompt
+from random import randrange
 
 
-def greetings():
+# settings_game
+NUM_LEVELS = 3
+EASY_RANGE = 10
+MEDIUM_RANGE = 50
+HARD_RANGE = 100
+LOWER_RANGE = 0
+
+
+def difficulty_settings():
+    difficulty_name = 'medium' # 'easy', 'medium', 'hard'
+    if difficulty_name == 'easy':
+        return randrange(LOWER_RANGE,EASY_RANGE)
+    elif difficulty_name == 'medium':
+        return randrange(LOWER_RANGE,MEDIUM_RANGE)
+    elif difficulty_name == 'hard':
+        return randrange(LOWER_RANGE,HARD_RANGE)
+    else:
+        return randrange(LOWER_RANGE,EASY_RANGE)
+
+
+def check_answer(question_answer, why):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def check_answer(correct_answer, questions, name):
-    for question, ans in zip(questions, correct_answer):
-        print(f'Question: {question}')
+    print(why)
+    for _ in range(0, NUM_LEVELS):
+        correct_answer, questions = question_answer(difficulty_settings)
+        print(f'Question: {questions}')
         user_ans = prompt.string('Your answer:')
-        if user_ans != ans:
+        if user_ans != str(correct_answer):
             print(
                 f'\'{user_ans}\' is wrong answer ;(.',
-                f'Correct answer was \'{ans}\'.'
+                f'Correct answer was \'{correct_answer}\'.'
             )
             print(f'Let\'s try again, {name}!')
             return

@@ -1,26 +1,32 @@
 from random import randrange
 
 
-def make_progression():
-    random_lenght = randrange(1, 10)
-    a = randrange(1, 10)
-    d = randrange(1, 10)
+WHY = 'What number is missing in the progression?'
+MAX_LENGHT_PROGRESSION = 10
+MIN_LENGHT_PROGRESSION = 5
+MIN_DIFF_PROGRESSION = 1
+
+def make_progression(difficulty_settings):
+    rndm_lenght = difficulty_settings()
+    if rndm_lenght >= MAX_LENGHT_PROGRESSION:
+        rndm_lenght = MAX_LENGHT_PROGRESSION
+    elif rndm_lenght <= MIN_LENGHT_PROGRESSION:
+        rndm_lenght = MIN_LENGHT_PROGRESSION
+    num = difficulty_settings()
+    difference = difficulty_settings()
+    if difficulty_settings() < MIN_DIFF_PROGRESSION:
+        difference = MIN_DIFF_PROGRESSION 
     progression = []
-    lenght = random_lenght if random_lenght >= 5 else 5
-    for i in range(0, lenght):
-        progression.append(a)
-        a = a + d
+    for i in range(rndm_lenght):
+        progression.append(num)
+        num = num + difference
     return progression
 
 
-def question_answer():
-    progressions = [make_progression() for i in range(0, 3)]
-    questions = []
-    correct_answer = []
-    for progr in progressions:
-        index = randrange(len(progr))
-        correct_answer.append(str(progr[index]))
-        progr[index] = '..'
-        questions.append(progr)
-    questions = [' '.join([str(y) for y in i]) for i in questions]
+def question_answer(difficulty_settings):
+    progression = make_progression(difficulty_settings)
+    index = randrange(len(progression))
+    correct_answer = str(progression[index])
+    progression[index] = '..'
+    questions = progression
     return correct_answer, questions

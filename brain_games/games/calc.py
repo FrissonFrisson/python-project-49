@@ -1,14 +1,24 @@
 from random import randrange, choice
 
 
-def question_answer():
+WHY = 'What is the result of the expression?'
+
+
+def question_answer(difficulty_settings):
     correct_answers = []
     questions = []
-    for i in range(0, 3):
-        num_1 = randrange(1, 100)
-        num_2 = randrange(1, 100)
-        operator = choice(['*', '+', '-'])
+    num_1 = difficulty_settings()
+    num_2 = difficulty_settings()
+    operator = choice(['*', '+', '-'])
+    if operator == '+':
         expression = f'{num_1} {operator} {num_2}'
-        value = eval(expression)
-        questions.append(str(expression)), correct_answers.append(str(value))
+        value = num_1 + num_2
+    elif operator == '-':
+        expression = f'{num_1} {operator} {num_2}'
+        value = num_1 - num_2
+    elif operator == '*':
+        expression = f'{num_1} {operator} {num_2}'
+        value = num_1 * num_2
+    questions = expression
+    correct_answers = value
     return correct_answers, questions

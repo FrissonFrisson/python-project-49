@@ -1,9 +1,10 @@
 from random import randrange
 
+WHY = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def question_answer():
-    questions = ([randrange(1, 100) for i in range(0, 3)])
-    correct_answer = (['yes' if is_prime(i) else 'no' for i in questions])
+def question_answer(difficulty_settings):
+    questions = difficulty_settings()
+    correct_answer = 'yes' if is_prime(questions) else 'no'
     return correct_answer, questions
 
 

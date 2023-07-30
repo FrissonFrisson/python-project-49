@@ -15,7 +15,7 @@ The Brain Games project consists of several mathematical games, each of which ha
 
 Brain training games contribute to improving logical thinking, memory, and attention. They are also useful for brain training and preventing possible problems with memory and cognitive functions in the future. 
 
-### Installation
+## Installation
 
 Clone the repository and install manually:
 

@@ -32,7 +32,7 @@ $ make install
 |Even  | Make brain-even                |In this game, you need to determine if the number is even.|
 |Calc  | Make brain-calc                |In this game you have to solve the expression             |
 |Gcd   | Make brain-gcd                 |In this game, you need to find the greatest common divisor of two numbers.|
-|progression | Make brain-progression   |In this game, you need to determine which number is missing in the progression.|
+|Progression | Make brain-progression   |In this game, you need to determine which number is missing in the progression.|
 
 
 [![asciicast](https://asciinema.org/a/vP91kEaDw2934otMXxs48R6oT.svg)](https://asciinema.org/a/vP91kEaDw2934otMXxs48R6oT)

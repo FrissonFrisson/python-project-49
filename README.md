@@ -6,3 +6,12 @@
 [![asciicast](https://asciinema.org/a/nOxCczG69pnx3zm1CV5bN6Udr.svg)](https://asciinema.org/a/nOxCczG69pnx3zm1CV5bN6Udr)
 [![asciicast](https://asciinema.org/a/4GhgDFxpu1aQuDxo73wiyWyxL.svg)](https://asciinema.org/a/4GhgDFxpu1aQuDxo73wiyWyxL)
 [![asciicast](https://asciinema.org/a/HQzcxqwy1rlcpqBWk7VaNYjq2.svg)](https://asciinema.org/a/HQzcxqwy1rlcpqBWk7VaNYjq2)
+
+### Installation
+
+Clone the repository and install manually:
+
+```bash
+$ gh repo clone FrissonFrisson/python-project-49
+$ make install
+```

@@ -6,6 +6,7 @@ MAX_LENGHT_PROGRESSION = 10
 MIN_LENGHT_PROGRESSION = 5
 MIN_DIFF_PROGRESSION = 1
 
+
 def make_progression(difficulty_settings):
     rndm_lenght = difficulty_settings()
     if rndm_lenght >= MAX_LENGHT_PROGRESSION:
@@ -15,10 +16,10 @@ def make_progression(difficulty_settings):
     num = difficulty_settings()
     difference = difficulty_settings()
     if difficulty_settings() < MIN_DIFF_PROGRESSION:
-        difference = MIN_DIFF_PROGRESSION 
+        difference = MIN_DIFF_PROGRESSION
     progression = []
     for i in range(rndm_lenght):
-        progression.append(num)
+        progression.append(str(num))
         num = num + difference
     return progression
 
@@ -26,7 +27,7 @@ def make_progression(difficulty_settings):
 def question_answer(difficulty_settings):
     progression = make_progression(difficulty_settings)
     index = randrange(len(progression))
-    correct_answer = str(progression[index])
+    correct_answer = progression[index]
     progression[index] = '..'
-    questions = progression
+    questions = ' '.join(progression)
     return correct_answer, questions

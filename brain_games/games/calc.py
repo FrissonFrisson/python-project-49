@@ -1,4 +1,4 @@
-from random import randrange, choice
+from random import choice
 
 
 WHY = 'What is the result of the expression?'

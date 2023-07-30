@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..games import prime, game_tools
+from brain_games.games import prime, game_tools
 
 
 def main():

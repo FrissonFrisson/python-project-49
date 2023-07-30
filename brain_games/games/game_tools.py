@@ -8,18 +8,18 @@ EASY_RANGE = 10
 MEDIUM_RANGE = 50
 HARD_RANGE = 100
 LOWER_RANGE = 0
+DIFFICULTY_NAME = 'easy'  # 'easy', 'medium', 'hard'
 
 
 def difficulty_settings():
-    difficulty_name = 'medium' # 'easy', 'medium', 'hard'
-    if difficulty_name == 'easy':
-        return randrange(LOWER_RANGE,EASY_RANGE)
-    elif difficulty_name == 'medium':
-        return randrange(LOWER_RANGE,MEDIUM_RANGE)
-    elif difficulty_name == 'hard':
-        return randrange(LOWER_RANGE,HARD_RANGE)
+    if DIFFICULTY_NAME == 'easy':
+        return randrange(LOWER_RANGE, EASY_RANGE)
+    elif DIFFICULTY_NAME == 'medium':
+        return randrange(LOWER_RANGE, MEDIUM_RANGE)
+    elif DIFFICULTY_NAME == 'hard':
+        return randrange(LOWER_RANGE, HARD_RANGE)
     else:
-        return randrange(LOWER_RANGE,EASY_RANGE)
+        return randrange(LOWER_RANGE, EASY_RANGE)
 
 
 def check_answer(question_answer, why):

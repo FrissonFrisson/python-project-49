@@ -1,6 +1,5 @@
-from random import randrange
-
 WHY = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def question_answer(difficulty_settings):
     questions = difficulty_settings()

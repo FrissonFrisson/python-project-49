@@ -1,4 +1,3 @@
-from random import randrange
 from math import gcd
 
 
@@ -11,4 +10,3 @@ def question_answer(difficulty_settings):
     correct_answer = str(gcd(num_1, num_2))
     questions = f'{num_1} {num_2}'
     return correct_answer, questions
-

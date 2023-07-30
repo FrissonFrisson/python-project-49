@@ -1,5 +1,3 @@
-from random import randrange
-
 WHY = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 

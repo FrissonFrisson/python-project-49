@@ -1,7 +1,7 @@
 from random import choice
 
 
-WHY = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
 
 
 def question_answer(difficulty_settings):

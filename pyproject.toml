@@ -19,6 +19,7 @@ packages = [{ include = "brain_games" },]
 [tool.poetry.dependencies]
 python = "^3.11"
 prompt = "^0.4.1"
+rope = "^1.9.0"
 
 
 [tool.poetry.group.dev.dependencies]

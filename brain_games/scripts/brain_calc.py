@@ -3,7 +3,7 @@ from brain_games.games import calc, game_tools
 
 
 def main():
-    game_tools.check_answer(calc.question_answer, calc.WHY)
+    game_tools.check_answer(calc.question_answer, calc.TASK)
     return
 
 

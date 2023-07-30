@@ -22,11 +22,11 @@ def difficulty_settings():
         return randrange(LOWER_RANGE, EASY_RANGE)
 
 
-def check_answer(question_answer, why):
+def check_answer(question_answer, TASK):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(why)
+    print(TASK)
     for _ in range(0, NUM_LEVELS):
         correct_answer, questions = question_answer(difficulty_settings)
         print(f'Question: {questions}')

@@ -1,7 +1,7 @@
 from random import randrange
 
 
-WHY = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
 MAX_LENGHT_PROGRESSION = 10
 MIN_LENGHT_PROGRESSION = 5
 MIN_DIFF_PROGRESSION = 1

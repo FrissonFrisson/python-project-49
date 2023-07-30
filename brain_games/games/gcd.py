@@ -1,7 +1,7 @@
 from math import gcd
 
 
-WHY = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
 
 
 def question_answer(difficulty_settings):

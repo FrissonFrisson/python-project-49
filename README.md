@@ -28,7 +28,7 @@ $ make install
 
 | Games| Command                        | Description                                              |
 |------|--------------------------------|--------------------------------------------------------- |
-|Prime | Make brain-prime               |In this game, you need to determine if a number is prime. |
+|Prime | ```bash Make brain-prime```              |In this game, you need to determine if a number is prime. |
 |Even  | Make brain-even                |In this game, you need to determine if the number is even.|
 |Calc  | Make brain-calc                |In this game you have to solve the expression             |
 |Gcd   | Make brain-gcd                 |In this game, you need to find the greatest common divisor of two numbers.|

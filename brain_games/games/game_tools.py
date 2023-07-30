@@ -27,7 +27,7 @@ def check_answer(question_answer, TASK):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(TASK)
-    for _ in range(0, NUM_LEVELS):
+    for _ in range(NUM_LEVELS):
         correct_answer, questions = question_answer(difficulty_settings)
         print(f'Question: {questions}')
         user_ans = prompt.string('Your answer:')

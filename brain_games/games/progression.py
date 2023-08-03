@@ -29,7 +29,7 @@ def question_answer():
     rndm_lenght = randint(MIN_NUM, MAX_NUM)
     rndm_difference = randint(MIN_NUM, MAX_NUM)
     progression = make_progression(rndm_num, rndm_lenght, rndm_difference)
-    index = randint(START_INDEX, len(progression))
+    index = randint(START_INDEX, len(progression) - 1)
     correct_answer = progression[index]
     progression[index] = '..'
     question = ' '.join(progression)

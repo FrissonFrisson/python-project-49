@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games import gcd, game_tools
+from brain_games.games import gcd
+from brain_games import game_tools
 
 
 def main():
-    game_tools.check_answer(gcd.question_answer, gcd.TASK)
+    game_tools.check_answer(gcd)
     return
 
 

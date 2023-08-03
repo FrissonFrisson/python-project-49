@@ -1,12 +1,16 @@
+from random import randint
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MAX_NUM = 25
+MIN_NUM = 0
 
 
-def question_answer(difficulty_settings):
-    questions = difficulty_settings()
-    correct_answer = 'yes' if is_prime(questions) else 'no'
-    return correct_answer, questions
+def question_answer():
+    num = randint(MIN_NUM, MAX_NUM)
+    question = num
+    correct_answer = 'yes' if is_prime(question) else 'no'
+    return correct_answer, question
 
 
 def is_prime(n):

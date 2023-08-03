@@ -1,12 +1,15 @@
 from math import gcd
+from random import randint
 
 
 TASK = 'Find the greatest common divisor of given numbers.'
+MAX_NUM = 25
+MIN_NUM = 0
 
 
-def question_answer(difficulty_settings):
-    num_1 = difficulty_settings()
-    num_2 = difficulty_settings()
+def question_answer():
+    num_1 = randint(MIN_NUM, MAX_NUM)
+    num_2 = randint(MIN_NUM, MAX_NUM)
     correct_answer = str(gcd(num_1, num_2))
-    questions = f'{num_1} {num_2}'
-    return correct_answer, questions
+    question = f'{num_1} {num_2}'
+    return correct_answer, question

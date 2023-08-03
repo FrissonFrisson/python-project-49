@@ -1,24 +1,24 @@
-from random import choice
+from random import choice, randint
 
 
 TASK = 'What is the result of the expression?'
+MAX_NUM = 10
+MIN_NUM = 0
 
 
-def question_answer(difficulty_settings):
-    correct_answers = []
-    questions = []
-    num_1 = difficulty_settings()
-    num_2 = difficulty_settings()
+def question_answer():
+    correct_answer = ''
+    question = ''
+    num_1 = randint(MIN_NUM, MAX_NUM)
+    num_2 = randint(MIN_NUM, MAX_NUM)
     operator = choice(['*', '+', '-'])
+    expression = f'{num_1} {operator} {num_2}'
     if operator == '+':
-        expression = f'{num_1} {operator} {num_2}'
         value = num_1 + num_2
     elif operator == '-':
-        expression = f'{num_1} {operator} {num_2}'
         value = num_1 - num_2
-    elif operator == '*':
-        expression = f'{num_1} {operator} {num_2}'
+    else:
         value = num_1 * num_2
-    questions = expression
-    correct_answers = value
-    return correct_answers, questions
+    question = expression
+    correct_answer = value
+    return correct_answer, question

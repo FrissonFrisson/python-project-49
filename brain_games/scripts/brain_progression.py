@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games import progressions, game_tools
+from brain_games.games import progression
+from brain_games import game_tools
 
 
 def main():
-    game_tools.check_answer(progressions.question_answer, progressions.TASK)
+    game_tools.check_answer(progression)
     return
 
 

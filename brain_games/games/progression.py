@@ -24,7 +24,7 @@ def make_progression(num, lenght, difference):
     return progression
 
 
-def question_answer():
+def make_question_answer():
     rndm_num = randint(MIN_NUM, MAX_NUM)
     rndm_lenght = randint(MIN_NUM, MAX_NUM)
     rndm_difference = randint(MIN_NUM, MAX_NUM)

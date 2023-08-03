@@ -6,7 +6,7 @@ MAX_NUM = 50
 MIN_NUM = 0
 
 
-def question_answer():
+def make_question_answer():
     num = randint(MIN_NUM, MAX_NUM)
     question = num
     correct_answer = 'yes' if is_even(num) else 'no'

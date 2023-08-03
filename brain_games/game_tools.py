@@ -11,7 +11,7 @@ def check_answer(game):
     print(f'Hello, {name}!')
     print(game.TASK)
     for _ in range(NUM_LEVELS):
-        correct_answer, questions = game.question_answer()
+        correct_answer, questions = game.make_question_answer()
         print(f'Question: {questions}')
         user_ans = prompt.string('Your answer:')
         if user_ans != str(correct_answer):

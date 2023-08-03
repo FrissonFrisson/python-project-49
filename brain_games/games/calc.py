@@ -6,7 +6,7 @@ MAX_NUM = 10
 MIN_NUM = 0
 
 
-def question_answer():
+def make_question_answer():
     correct_answer = ''
     question = ''
     num_1 = randint(MIN_NUM, MAX_NUM)
